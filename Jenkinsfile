@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools {
-        maven "localMaven"
-        jdk "Java8"
+        maven "Maven"
+        jdk "Java11"
     }
 
     environment {
@@ -23,7 +23,7 @@ pipeline {
         stage("Check out") {
             steps {
                 script {
-                    git branch: 'feature/nexusUpload', url: 'https://github.com/ranjit4github/LoginWebApp.git';
+                    git branch: 'feature/nexusUpload', url:  'https://github.com/Hulkyogesh/LoginWebApp.git';
                 }
             }
         }
@@ -31,7 +31,7 @@ pipeline {
         stage("mvn build") {
             steps {
                 script {
-                    sh "mvn clean package"
+                    sh "mvn clean deploy"
                 }
             }
         }
@@ -76,18 +76,6 @@ pipeline {
                 }
             }
         }
-        stage ('Execute Ansible Play - CD'){
-            agent {
-                label 'ansible'
-            }
-            steps{
-                script {
-                    git branch: 'feature/ansibleNexus', url: 'https://github.com/ranjit4github/Ansible_Demo_Project.git';
-                }
-                sh '''
-                    ansible-playbook -e vers=${BUILD_NUMBER} roles/site.yml
-                '''
-            }
-        }
+        
     }
 }
