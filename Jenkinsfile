@@ -15,8 +15,8 @@ pipeline {
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "Java-Prj-Snapshot"
         // Jenkins credential id to authenticate to Nexus OSS
-        NEXUS_CREDENTIAL_ID = "nexusCred"
-        ARTIFACT_VERSION = "${BUILD_NUMBER}"
+       // NEXUS_CREDENTIAL_ID = "nexusCred"
+       // ARTIFACT_VERSION = "${BUILD_NUMBER}"
     }
 
     stages {
