@@ -29,12 +29,12 @@
     <repository>
       <id>nexus</id>
       <name>Releases</name>
-      <url>http://13.201.54.145:8081/repository/Java-Project-release/</url>
+      <url>http://65.0.101.253:8081/repository/Java-Prj-Release/</url>
     </repository>
     <snapshotRepository>
       <id>nexus</id>
       <name>Snapshot</name>
-      <url>http://13.201.54.145:8081/repository/Java-Project-snapshot/</url>
+      <url>http://65.0.101.253:8081/repository/Java-Prj-Snapshot/</url>
     </snapshotRepository>
   </distributionManagement>
 	<build>
