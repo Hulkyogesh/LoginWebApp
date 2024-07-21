@@ -1,6 +1,6 @@
 pipeline {
     agent any
-        tools {
+    tools {
         maven "Maven"
         jdk "Java11"
     }
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean deploy'
+                sh 'mvn clean package'
             }
         }
         stage('Upload to Nexus') {
@@ -26,23 +26,18 @@ pipeline {
                 script {
                     def pom = readMavenPom file: 'pom.xml'
                     def warFile = "target/${pom.artifactId}-${pom.version}.war"
-                    
+
                     nexusArtifactUploader(
                         nexusVersion: 'nexus3',
                         protocol: 'http',
-                        nexusUrl: NEXUS_URL,
-                        groupId: pom.groupId,
-                        version: pom.version,
-                        repository: 'maven-releases',
+                        nexusUrl: '13.233.165.224:8081',
+                        repository: 'Java-Prj-Snapshot',
                         credentialsId: NEXUS_CREDENTIALS_ID,
-                        artifacts: [
-                            [
-                                artifactId: pom.artifactId,
-                                classifier: '',
-                                file: warFile,
-                                type: 'war'
-                            ]
-                        ]
+                        groupId: pom.groupId,
+                        artifactId: pom.artifactId,
+                        version: pom.version,
+                        packaging: 'war',
+                        file: warFile
                     )
                 }
             }
