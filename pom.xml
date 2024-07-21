@@ -26,15 +26,10 @@
 	</dependencies>
 
 	<distributionManagement>
-    <repository>
-      <id>nexus</id>
-      <name>Releases</name>
-      <url>http://15.206.146.155:8081/repository/Java-Prj-Release/</url>
-    </repository>
-    <snapshotRepository>
+   <snapshotRepository>
       <id>nexus</id>
       <name>Snapshot</name>
-      <url>http://52.66.7.237:8081/repository/Java-prj-snapshot/</url>
+      <url>http://13.233.165.224:8081/repository/Java-Prj-Snapshot/</url>
     </snapshotRepository>
   </distributionManagement>
 	<build>
