@@ -4,7 +4,7 @@
 	<groupId>com.ranjitswain</groupId>
 	<artifactId>LoginWebApp</artifactId>
 	<packaging>war</packaging>
-	<version>SNAPSHOT</version>
+	<version>Snapshot</version>
 	<name>LoginWebApp Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -32,7 +32,7 @@
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
-            <url>http://13.233.165.224:8081/repository/Java-Prj-Snapshot/</url>
+            <url>http://13.234.186.95:8081/repository/Java-Prj-Snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
 	<build>
