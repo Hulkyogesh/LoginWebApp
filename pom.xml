@@ -34,7 +34,7 @@
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
 			<name>Snapshots</name>
-			<url>http://13.234.186.95:8081/repository/Java-Prj-Snapshot/</url>
+			<url>http://13.200.252.130:8081/repository/Java-Prj-Snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<build>
