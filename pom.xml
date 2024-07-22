@@ -4,7 +4,7 @@
 	<groupId>com.ranjitswain</groupId>
 	<artifactId>LoginWebApp</artifactId>
 	<packaging>war</packaging>
-	<version>Snapshot</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>LoginWebApp Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -26,17 +26,17 @@
 	</dependencies>
 
 	<distributionManagement>
-    <repository>
-      <id>nexus</id>
-      <name>Releases</name>
-      <url>http://13.126.4.181:8081/repository/Java-Prj-Release/</url>
-    </repository>
-    <snapshotRepository>
-      <id>nexus</id>
-      <name>Snapshot</name>
-      <url>http://13.234.186.95:8081/repository/Java-Prj-Snapshot/</url>
-    </snapshotRepository>
-  </distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+			<name>Releases</name>
+			<url>http://13.126.4.181:8081/repository/Java-Prj-Release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>Snapshots</name>
+			<url>http://13.234.186.95:8081/repository/Java-Prj-Snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<build>
 		<finalName>LoginWebApp</finalName>
 	</build>
