@@ -25,16 +25,18 @@
 		</dependency> 
 	</dependencies>
 
-	 <distributionManagement>
-        <repository>
-            <id>releases</id>
-            <url>http://13.233.165.224:8081/repository/Java-Prj-Snapshot/</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <url>http://13.234.186.95:8081/repository/Java-Prj-Snapshot/</url>
-        </snapshotRepository>
-    </distributionManagement>
+	<distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>Releases</name>
+      <url>http://13.126.4.181:8081/repository/Java-Prj-Release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Snapshot</name>
+      <url>http://13.234.186.95:8081/repository/Java-Prj-Snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
 	<build>
 		<finalName>LoginWebApp</finalName>
 	</build>
