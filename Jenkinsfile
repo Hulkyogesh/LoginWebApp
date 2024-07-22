@@ -30,7 +30,7 @@ pipeline {
                     nexusArtifactUploader(
                         nexusVersion: 'nexus3',
                         protocol: 'http',
-                        nexusUrl: '13.233.165.224:8081',
+                        nexusUrl: NEXUS_URL,
                         repository: 'Java-Prj-Snapshot',
                         credentialsId: NEXUS_CREDENTIALS_ID,
                         groupId: pom.groupId,
