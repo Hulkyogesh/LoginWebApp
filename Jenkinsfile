@@ -19,7 +19,7 @@ NEXUS_URL = 'http://13.200.252.130:8081/repository/Java-Prj-Snapshot/' // Nexus 
     stages {
         stage('Checkout') {
             steps {
-git 'https://github.com/Hulkyogesh/LoginWebApp.git'
+                git branch: 'feature/nexusUpload', url: 'https://github.com/ranjit4github/LoginWebApp.git'; 
             }
         }
         stage('Build') {
