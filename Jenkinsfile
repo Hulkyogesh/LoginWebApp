@@ -15,13 +15,17 @@ pipeline {
         NEXUS_CREDENTIALS_ID = 'NexusCred' // ID of the credentials in Jenkins
 NEXUS_URL = 'http://13.200.252.130:8081/repository/Java-Prj-Snapshot/' // Nexus repository URL
     }
- 
+
+
     stages {
-        stage('Checkout') {
+        stage("Check out") {
             steps {
-                git branch: 'feature/nexusUpload', url:  'https://github.com/Hulkyogesh/LoginWebApp.git'; 
+                script {
+                    git branch: 'feature/nexusUpload', url: 'https://github.com/Hulkyogesh/LoginWebApp.git';
+                }
             }
         }
+    stages {
         stage('Build') {
             steps {
                 sh 'mvn clean package'
