@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         NEXUS_CREDENTIALS_ID = 'NexusCred' // ID of the credentials in Jenkins
-        NEXUS_URL = 'http://13.233.165.224:8081/repository/Java-Prj-Snapshot/' // Nexus repository URL
+        NEXUS_URL = 'http://13.234.186.95:8081/repository/Java-Prj-Snapshot/' // Nexus repository URL
     }
 
     stages {
@@ -30,7 +30,7 @@ pipeline {
                     nexusArtifactUploader(
                         nexusVersion: 'nexus3',
                         protocol: 'http',
-                        nexusUrl: '13.233.165.224:8081',
+                        nexusUrl: '13.234.186.95:8081',
                         repository: 'Java-Prj-Snapshot',
                         credentialsId: NEXUS_CREDENTIALS_ID,
                         groupId: pom.groupId,
