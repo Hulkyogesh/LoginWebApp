@@ -146,7 +146,7 @@ under the License.
 
     <server>
       <id>nexus-snapshots</id>
-      <username>admin</username>
+      <username>Jenkins-user</username>
       <password>Yogesh@110698</password>
        <configuration>
       <httpConfiguration>
