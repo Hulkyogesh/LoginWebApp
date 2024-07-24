@@ -106,7 +106,7 @@ under the License.
 
 
             <proxy>
-      <id>nexus</id>
+      <id>nexus-snapshots</id>
       <active>true</active>
       <protocol>http</protocol>
       <username>admin</username>
