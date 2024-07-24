@@ -13,7 +13,7 @@ pipeline {
  
     environment {
         NEXUS_CREDENTIALS_ID = 'NexusCred' // ID of the credentials in Jenkins
-NEXUS_URL = 'http://13.200.252.130:8081/repository/Java-Prj-Snapshot/' // Nexus repository URL
+NEXUS_URL = 'http://3.110.157.179:8081/repository/Java-Prj-Snapshot/' // Nexus repository URL
     }
  
     stages {
@@ -37,7 +37,7 @@ git branch: 'feature/nexusUpload', url: 'https://github.com/Hulkyogesh/LoginWebA
                     nexusArtifactUploader(
                         nexusVersion: 'nexus3',
                         protocol: 'http',
-                        nexusUrl: NEXUS_URL,
+                        nexusUrl: 3.110.157.179:8081,
                         repository: 'Java-Prj-Snapshot',
                         credentialsId: NEXUS_CREDENTIALS_ID,
                         artifacts: [
