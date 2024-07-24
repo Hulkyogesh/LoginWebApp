@@ -145,7 +145,7 @@ under the License.
     -->
 
     <server>
-      <id>nexus</id>
+      <id>nexus-snapshots</id>
       <username>admin</username>
       <password>Yogesh@110698</password>
        <configuration>
