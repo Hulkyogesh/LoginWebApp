@@ -26,16 +26,15 @@
 	</dependencies>
 
 	<distributionManagement>
-		<repository>
-			<id>nexus-releases</id>
-			<name>Releases</name>
-			<url>http://13.126.4.181:8081/repository/Java-Prj-Release/</url>
-		</repository>
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<name>Snapshots</name>
-			<url>http://3.110.157.179:8081/repository/Java-Prj-Snapshot/</url>
-		</snapshotRepository>
+		<repositories>
+    <repository>
+        <id>nexus-snapshots</id>
+        <url>http://3.110.157.179:8081/repository/Java-Prj-Snapshot/</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
 	</distributionManagement>
 	<build>
 		<finalName>LoginWebApp</finalName>
