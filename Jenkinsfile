@@ -42,9 +42,9 @@ git branch: 'feature/nexusUpload', url: 'https://github.com/Hulkyogesh/LoginWebA
                         credentialsId: NEXUS_CREDENTIALS_ID,
                         artifacts: [
                             [
-                                artifactId: pomDetails.artifactId,
-                                groupId: pomDetails.groupId,
-                                version: pomDetails.version,
+                                artifactId: LoginWebApp,
+                                groupId: com.ranjitswain,
+                                version: 1.0-SNAPSHOT,
                                 packaging: 'war',
                                 file: warFile
                             ]
