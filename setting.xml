@@ -111,9 +111,9 @@ under the License.
       <protocol>http</protocol>
       <username>admin</username>
       <password>Yogesh@110698</password>
-      <host>15.206.146.155</host>
+      <host>http:3.110.157.179</host>
       <port>8081</port>
-      <nonProxyHosts>local.net|15.206.146.155</nonProxyHosts>
+      <nonProxyHosts>local.net|3.110.157.179/</nonProxyHosts>
     </proxy>
   </proxies>
 
