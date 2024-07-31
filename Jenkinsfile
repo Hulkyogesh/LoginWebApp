@@ -30,7 +30,7 @@ git branch: 'feature/nexusUpload', url: 'https://github.com/Hulkyogesh/LoginWebA
                         [
                             artifactId: 'LoginWebApp',
                             classifier: '',
-                            file: "target/LoginWebApp Maven Webapp-${mavenPom.version}.war",
+                            file: "target/LoginWebAppMavenWebapp-${mavenPom.version}.war",
                             type: 'war'
                         ]
                     ],
