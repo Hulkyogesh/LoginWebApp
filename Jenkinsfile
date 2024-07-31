@@ -28,7 +28,7 @@ git branch: 'feature/nexusUpload', url: 'https://github.com/Hulkyogesh/LoginWebA
                     def nexusRepoName = mavenPom.version.endsWith("SNAPSHOT") ? "LoginWebApp-snapshot" : "LoginWebApp-release"
                     nexusArtifactUploader artifacts: [
                         [
-                            artifactId: 'simple-app',
+                            artifactId: 'LoginWebApp',
                             classifier: '',
                             file: "target/LoginWebApp Maven Webapp-${mavenPom.version}.war",
                             type: 'war'
